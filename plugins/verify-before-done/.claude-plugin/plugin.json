@@ -1,0 +1,11 @@
+{
+  "name": "verify-before-done",
+  "description": "Stops Claude from finishing a turn with unverified code: if source files changed and no build or test ran afterwards, it is sent back once to verify or to say what is left unchecked.",
+  "version": "1.0.0",
+  "author": {
+    "name": "yelnurqaratay",
+    "url": "https://github.com/yelnurqaratay"
+  },
+  "keywords": ["testing", "build", "verification", "quality", "hooks"],
+  "license": "MIT"
+}

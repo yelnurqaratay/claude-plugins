@@ -1,0 +1,11 @@
+{
+  "name": "git-guard",
+  "description": "Asks for confirmation before git push, force-push, commit --amend, rebase, reset --hard and other commands that publish, rewrite or discard history.",
+  "version": "1.0.0",
+  "author": {
+    "name": "yelnurqaratay",
+    "url": "https://github.com/yelnurqaratay"
+  },
+  "keywords": ["git", "push", "safety", "confirmation", "hooks"],
+  "license": "MIT"
+}

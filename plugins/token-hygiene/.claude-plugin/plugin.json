@@ -1,0 +1,11 @@
+{
+  "name": "token-hygiene",
+  "description": "Keeps API tokens out of the transcript: blocks prompts and commands that contain literal secrets or print them, and stores tokens in the macOS Keychain via /token-hygiene:token.",
+  "version": "1.0.0",
+  "author": {
+    "name": "yelnurqaratay",
+    "url": "https://github.com/yelnurqaratay"
+  },
+  "keywords": ["security", "secrets", "tokens", "keychain", "hooks"],
+  "license": "MIT"
+}

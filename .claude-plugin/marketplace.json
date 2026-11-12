@@ -1,0 +1,40 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "yelnurqaratay",
+  "version": "1.0.0",
+  "description": "Guardrail hooks for Claude Code: no AI attribution, git confirmations, token hygiene, verify before done.",
+  "owner": {
+    "name": "yelnurqaratay",
+    "url": "https://github.com/yelnurqaratay"
+  },
+  "plugins": [
+    {
+      "name": "no-ai-attribution",
+      "version": "1.0.0",
+      "description": "Blocks Co-Authored-By: Claude and \"Generated with Claude Code\" in commits, tags, PRs/MRs and comments.",
+      "source": "./plugins/no-ai-attribution",
+      "category": "productivity"
+    },
+    {
+      "name": "git-guard",
+      "version": "1.0.0",
+      "description": "Asks before git push, force-push, amend, rebase, reset --hard and other history-rewriting commands.",
+      "source": "./plugins/git-guard",
+      "category": "productivity"
+    },
+    {
+      "name": "token-hygiene",
+      "version": "1.0.0",
+      "description": "Keeps API tokens out of prompts, commands and output; stores them in the macOS Keychain.",
+      "source": "./plugins/token-hygiene",
+      "category": "security"
+    },
+    {
+      "name": "verify-before-done",
+      "version": "1.0.0",
+      "description": "Sends Claude back once when code changed but nothing was built or tested afterwards.",
+      "source": "./plugins/verify-before-done",
+      "category": "productivity"
+    }
+  ]
+}

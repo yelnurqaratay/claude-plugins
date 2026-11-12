@@ -1,0 +1,11 @@
+{
+  "name": "no-ai-attribution",
+  "description": "Blocks Co-Authored-By: Claude, \"Generated with Claude Code\" and similar lines in commits, tags, PRs/MRs and review comments.",
+  "version": "1.0.0",
+  "author": {
+    "name": "yelnurqaratay",
+    "url": "https://github.com/yelnurqaratay"
+  },
+  "keywords": ["git", "attribution", "commits", "pull-requests", "hooks"],
+  "license": "MIT"
+}

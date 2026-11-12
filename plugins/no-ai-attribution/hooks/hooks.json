@@ -1,0 +1,17 @@
+{
+  "description": "Deny AI attribution in commits, tags, PRs/MRs and review comments",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|mcp__.*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/check_attribution.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

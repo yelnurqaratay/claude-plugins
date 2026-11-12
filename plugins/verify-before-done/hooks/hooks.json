@@ -1,0 +1,16 @@
+{
+  "description": "Block the end of a turn once when code changed but nothing was built or tested afterwards",
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"${CLAUDE_PLUGIN_ROOT}/hooks/check_verified.py\"",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}
